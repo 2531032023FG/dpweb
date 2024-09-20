@@ -1,0 +1,263 @@
+/* Estilos globales */
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Quicksand:wght@300..700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Quicksand';
+    background-color: rgba(204, 199, 193, 0.801);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+#inicio {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+/*--------------------------------------------------*/
+header {
+    background-color: #004466; /* Color de fondo para el header */
+    padding: 15px; /* Espaciado dentro del header */
+}
+
+/* Ajustes opcionales para texto e íconos dentro del header */
+header nav ul li a {
+    color: #004466; /* Color del texto de los enlaces */
+    background-color: rgba(204, 199, 193, 0.801);
+}
+
+header nav ul li a i {
+    color: #004466; /* Color de los íconos */
+}
+/*_____________________*/
+
+#inicio header {
+    width: 100%;
+    
+}
+
+/* Estilos del logo */
+.logo img {
+    position: relative;
+    top: 0;
+    left: 0;
+    padding: 10px;
+    width: 300px;
+    height: auto;
+}
+
+/* Alineación del contenido del header */
+.Contenido-header {
+    display: flex;
+    justify-content: space-between; /* Distribuye el logo a la izquierda y el menú a la derecha */
+    align-items: center;
+    width: 100%; /* Asegura que el contenido ocupe toda la anchura */
+    padding: 10px 20px;
+}
+
+/* Estilos de la navegación */
+nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: rgba(204, 199, 193, 0.801);
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    text-align: center;
+    margin: 0 35px; /* Espaciado horizontal entre los ítems del menú */
+}
+
+nav ul li a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: brown;
+    text-decoration: none;
+    font-size: 14px; /* Ajusta el tamaño del texto */
+}
+
+nav ul li a i {
+    font-size: 20px; /* Ajusta el tamaño del ícono */
+    margin-bottom: 5px; /* Espacio entre el ícono y el texto */
+}
+
+nav ul li:hover i {
+    color: blue; /* Cambia el color del ícono al pasar el cursor */
+}
+
+/* Hover para el texto */
+nav ul li a:hover {
+    color: blue; /* Cambia el color del texto al pasar el cursor */
+}
+
+/* INICIO DE CARRUSEL */
+table {
+    width: 100%;
+    border-collapse: collapse; /* Elimina el espacio entre celdas */
+    border-top: 5px solid #004466; /* Borde superior de toda la tabla */
+    border-bottom: 5px solid #004466; /* Borde inferior de toda la tabla */
+}
+
+td {
+    padding: 0;
+    width: 25%; /* Cada celda ocupa el 25% del ancho */
+}
+
+td:first-child {
+    border-left: 5px solid #004466; /* Borde izquierdo en la primera celda */
+}
+
+td:last-child {
+    border-right: 5px solid #004466; /* Borde derecho en la última celda */
+}
+
+img {
+    width: 100%; /* La imagen ocupa todo el ancho de la celda */
+    height: 200px; /* Fija una altura para que todas las imágenes tengan el mismo tamaño */
+    object-fit: cover; /* Recorta las imágenes para que se ajusten sin deformarse */
+}
+
+.image-row {
+    height: auto; /* Ajusta la altura de la fila para que se acomode a las imágenes */
+}
+
+
+
+
+/* platos */
+
+#prendas h2{
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+    color: #004466;
+    margin-bottom: 30px;
+}
+
+#prendas .fila{
+    display: flex;
+    max-width: 1100px;
+    margin: auto;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#prendas .fila .item{
+    width: 33%;
+    position: relative;
+    overflow: hidden;
+}
+
+#prendas .fila .item img{
+    width: 100%;
+    display: block;
+}
+
+#prendas .fila .item p{
+    position: absolute;
+    width: 100%;
+    bottom: -100;
+    padding: 10px;
+    background-color: #126792;
+    color: #fff;
+    transition: .5s;
+}
+
+#prendas .fila .item:hover p{
+    bottom: 0px;
+}
+
+#prendas button{
+    display: block;
+    width: fit-content;
+    margin: auto;
+    margin-top: 20px;
+    font-size: 20px;
+    border: none;
+    background-color: #126792;
+    color: #fff;
+    padding: 7px 25px;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+
+/* contacto */
+#contacto {
+    text-align: center;
+    padding: 40px 0;
+    background-color: #004466; /* Fondo oscuro */
+    color: white; /* Texto blanco */
+}
+
+#contacto h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    background-color: #004466;
+}
+
+#contacto .social {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    background-color: #004466;
+}
+
+#contacto .social a {
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    border-radius: 50%;
+    transition: background-color 0.3s ease;
+}
+
+#contacto .social a i {
+    margin-right: 8px;
+}
+
+#contacto .social a:hover {
+    background-color: #1da1f2; /* Color de fondo al hacer hover */
+}
+
+#contacto .social a i.fa-phone, 
+#contacto .social a i.fa-envelope {
+    font-size: 22px;
+}
+
+/* Estilos para los iconos */
+#contacto .fa-facebook {
+    color: #3b5998;
+}
+
+#contacto .fa-instagram {
+    color: #e1306c;
+}
+
+#contacto .fa-twitter {
+    color: #1da1f2;
+}
+
+#contacto .fa-envelope {
+    color: #ff8f46;
+}
+
+
+
+
+
+
